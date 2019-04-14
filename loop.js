@@ -109,18 +109,21 @@ function mySort(nums){
     for(let i=0; i < nums.length; i++){
         if((nums[i] % 2) === 1){
             odds.push(parseInt(nums[i]))
-            console.log('Odd number')
-            console.log(odds)
         }
         else{
-            evens.push(parseInt(nums[i]))
-            console.log('Even number')
-            console.log(evens)
+            evens.push(parseInt(nums[i]))   
         }
     }
+    //console.log('Even number')
+    console.log('Even number are: ' + evens)
+    //console.log('Odd number')
+    console.log('Even number are: ' + odds)
+    let numsArray = odds.sort((a, b) => a - b).concat(evens.sort((a, b) => a - b));
+    return numsArray;
     
 }
-mySort(45678)
+var a = mySort(145678)
+console.log(a)
 
 //function that find capital letter in a sentence
 function findCapitalLetters(sentence){
@@ -130,10 +133,11 @@ function findCapitalLetters(sentence){
     for(let k = 0; k < sentence.length; k++){
         if(sentence[k] === sentence[k].toUpperCase()){
             keep.push(sentence[k])
-            console.log(keep)
+            //console.log(keep)
             //console.log(sentence[k])
             //console.log(sentence[k].length)
         }
     }
+    console.log(keep)
 }
-findCapitalLetters('I Need aLl cApital letters')
+findCapitalLetters('I Need aLl cpital letters a')
