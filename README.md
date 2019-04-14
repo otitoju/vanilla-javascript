@@ -1,1 +1,2 @@
 # vanilla-javascript
+This source code consist of various javascript code such as for loop, if statement, functions etc. i created this to help javascript beginners. you can also find the python version of this source code @github.com/otitoju/pure-python.
